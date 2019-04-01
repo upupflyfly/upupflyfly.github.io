@@ -352,7 +352,7 @@
 <h2 id="注册github"><a href="#注册github" class="headerlink" title="注册github"></a>注册github</h2><p>进入<a href="https://github.com/" title="github" target="_blank" rel="external">github官网</a> 注册账号。</p>
 <h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>成功注册后，在<a href="https://github.com/new" title="repository" target="_blank" rel="external">这里</a> 创建仓库。</p>
 <p>这个新仓库就将是存放你即将拥有的博客的地方。</p>
-<p><strong>注意</strong> 你的仓库名不能随便取，这样会导致github混乱，取名的格式应该为“用户名.github.io”<br>例如我的用户名geekdoe，仓库名为geekdoe.github.io。</p>
+<p><strong>注意</strong> 你的仓库名不能随便取，这样会导致github混乱，取名的格式应该为“用户名.github.io”<br>例如我的用户名upupflyfly，仓库名为upupflyfly.github.io。</p>
 <h1 id="安装部署"><a href="#安装部署" class="headerlink" title="安装部署"></a>安装部署</h1><h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>Windows下请下载并安装<a href="https://git-scm.com/download/win/" title="git" target="_blank" rel="external">git</a><br><em>作用：把本地的hexo代码提交到github上去。</em></p>
 <h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>点击<a href="https://nodejs.org/" title="Node.js" target="_blank" rel="external">Node.js</a> 下载。<br><em>作用：hexo运行环境，用来创建hexo博客框架。</em></p>
 <h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>运行环境安装玩以后，下面就进入正题了。<br>安装前先介绍几个hexo常用的命令,#后面为注释。</p>
@@ -380,11 +380,11 @@ hexo clean   #清除生成的文件
 
 <p>下面可以简单的查看一下效果，输入命令：<br><code>hexo s</code></p>
 <p>然后用浏览器访问<em><a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></em>，应该能看到默认的效果了（自带主题landscape）。</p>
-<h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><p>本地环境搭建好以后，就该发布到互联网，让别人可以访问，我们选择github pages。<br>编辑全局配置文<code>_config.yml</code>(在F:\hexo下)。部署时，把下面的geekdoe都换成你的账号名。</p>
+<h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><p>本地环境搭建好以后，就该发布到互联网，让别人可以访问，我们选择github pages。<br>编辑全局配置文<code>_config.yml</code>(在F:\hexo下)。部署时，把下面的upupflyfly都换成你的账号名。</p>
 <pre><code>
 deploy: 
   type: git
-  repository: git@github.com:geekdoe/geekdoe.github.io.git
+  repository: git@github.com:upupflyfly/upupflyfly.github.io.git
   branch: master
 </code></pre>
 
@@ -398,10 +398,10 @@ deploy:
 hexo deploy
 </code></pre>
 
-<p>第一次hexo d可能会报错：<code>ERROR Deployer not found:git</code>，需要安装一下<code>hexo-deployer-git</code>这个插件：<br><code>npm install hexo-deployer-git --save</code><br>安装好了继续执行<code>hexo d</code>部署命令，就可以访问了。我的是<code>geekdoe.github.io</code>。<br>需要输入注册邮箱和用户名</p>
+<p>第一次hexo d可能会报错：<code>ERROR Deployer not found:git</code>，需要安装一下<code>hexo-deployer-git</code>这个插件：<br><code>npm install hexo-deployer-git --save</code><br>安装好了继续执行<code>hexo d</code>部署命令，就可以访问了。我的是<code>upupflyfly.github.io</code>。<br>需要输入注册邮箱和用户名</p>
 <pre><code>
-git config --global user.email "wxcdoe@gmail.com"
-git config --global user.name "geekdoe"
+git config --global user.email "upupflyfly@126.com"
+git config --global user.name "upupflyfly"
 </code></pre>
 
 
@@ -943,7 +943,7 @@ limit: 20  #在 rss 中最多生成的文章数(0显示所有)
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://blog.csdn.net/geekdoe" target="_blank" title="CSDN">
+                <a href="https://www.jianshu.com/u/d5c5c8434b7d" target="_blank" title="CSDN">
                   
                     <i class="fa fa-fw fa-globe"></i>
                   
